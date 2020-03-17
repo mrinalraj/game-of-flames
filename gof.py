@@ -32,7 +32,7 @@ def waitForPlayerToPressKey():
             if event.type == QUIT:
                 terminate()
             if event.type == KEYDOWN:
-                if event.key == K_ESCAPE:  # pressing escape quits
+                if event.key == K_ESCAPE:
                     terminate()
                 return
 
@@ -184,7 +184,6 @@ while True:
         drawText('Score: %s' % (score), font, windowSurface, 10, 0)
         drawText('Top Score: %s' % (topScore), font, windowSurface, 10, 40)
 
-        # Draw the player's rectangle
         windowSurface.blit(playerImage, playerRect)
 
         # Draw each fire
