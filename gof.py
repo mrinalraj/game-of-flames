@@ -177,7 +177,7 @@ while True:
             if b['rect'].top > WINDOWHEIGHT:
                 fires.remove(b)
 
-        # Draw the game world on the window.
+
         windowSurface.blit(BACKGROUNDCOLOR, (0, 0))
 
         # Draw the score and top score.
